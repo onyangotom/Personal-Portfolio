@@ -42,3 +42,11 @@ class Client(models.Model):
     def __str__(self):
         return self.name
     
+#my tech stack
+class Stack(models.Model):
+    name= models.CharField(max_length=30, verbose_name="stack")
+    description = models.TextField(verbose_name="my tech stack")
+    image = models.ImageField(upload_to="stack", default= "default.png")
+
+    def __str__(self):
+        return self.name
