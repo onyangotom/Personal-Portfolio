@@ -68,7 +68,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),  # Using pathlib.Path
     }
 }
-DATABASES ["default"]= dj_database_url.parse(os.environ("DATABASE_URL"))
+
 
 
 
